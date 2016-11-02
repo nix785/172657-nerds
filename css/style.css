@@ -10,7 +10,129 @@ h1{
     line-height: 55px;}s
     
 h2{
-    font-size: 24px;
-    line-height: 30px;
+    c;
     
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main_header{
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.container_top {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom:10px;
+}
+.logo{
+    float:left;
+    width: 160px;
+    margin-right: 200px;
+        }
+.nav_navigation{
+    float: left;
+    width: 600px;
+}
+.header_cart{
+    float: right;
+    width: 120px;
+}
+
+.slide{
+    width: 1160px;
+    margin: 0 auto;
+}
+.slide_img{
+    float: right;
+    width: 760px;
+}
+.slide_text{
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+}
+.content{
+    width: 1440px;
+    margin: 0 auto;
+}
+.content_item{
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height:0; 
+    padding-bottom: 80px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 40px;
+   padding-right: 60px;
+}
+.item{
+    display: inline-block;
+    width: 300px;
+    margin-right: 100px;
+    font-size: 16px;
+    line-height: 24px
+}
+.item:nth-child(3n){
+    margin-right: 0;
+}
+.content_info{
+    width: 1160px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+      border-bottom: 1px solid #eeeeee;
+    margin-bottom: 40px;
+    
+}
+.content_info_left{
+    float: left;
+    width: 660px;
+    }
+.content_info_right{
+    float: right;
+    width: 360px;
+    text-align: center;
+}
+.procent_item{
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+}
+.content_logo{
+      width: 1160px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+    margin-bottom: 80px;
+   }
+.content_logo img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 90px;
+}
+.content_map{
+    margin-bottom: 70px;
+}
+.contact{
+    float: left;
+    width: 320px;
+}
+.container{
+     width: 1160px;
+    margin: 0 auto;
+}
+.footer_social{
+    float: left;
+    width: 260px;
+    margin-right: 140px;
+}
+.main_footer_right{
+    float: left;
+    width: 560px;
 }
