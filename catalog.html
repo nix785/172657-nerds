@@ -7,9 +7,9 @@
   </head>
   <body>
 <header class="main_header">
-    <div class="container_top">
+    <div class="container_top clearfix">
         <div class="logo">
-           <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
         </div>
         <nav class="nav_navigation">
             <ul>
@@ -20,33 +20,35 @@
             </ul>
         </nav>
         <div class="header_cart">
-            <a href="#" class="cart"></a>
+            <a href="#" class="cart">корзина</a>
         </div>
     </div>
-    <h1>Магазин готовых шаблонов</h1>
+    <div class="header_title">
+    <h1>Магазин готовых шаблонов</h1></div>
     </header>
-    <main class="container">
-        <div class="sidebar">
+    <main class="catalog">
+       <div class="container clearfix">
+        <div class="catalog_sidebar">
            <p>Стоимость</p>
             <form class="filter" action="filter.php" method="post">
                 <input type="range" min="0" max="50000"><br>
                 <label for="min">От</label><input type="text" id="min">
                 <label for="max">До</label><input type="text" id="max"><br>
                 <p>Сетка</p>
-                <input type="radio" id="adaptive"><label for="adaptive">Адаптивная</label>
-                <input type="radio" id="fixed"><label for="fixed">Фиксированная</label>
-                <input type="radio" id="rubber"><label for="rubber">Резиновая</label>
+                <input type="radio" id="adaptive"><label for="adaptive">Адаптивная</label><br>
+                <input type="radio" id="fixed"><label for="fixed">Фиксированная</label><br>
+                <input type="radio" id="rubber"><label for="rubber">Резиновая</label><br>
                 <p>Особенности</p>
-                <input type="checkbox" id="slider" checked><label for="slider">Слайдер</label>
-                <input type="checkbox" id="block" ><label for="block">Блок преимуществ</label>
-                <input type="checkbox" id="news" checked><label for="news">Новости</label>
-                <input type="checkbox" id="gallery" ><label for="gallery">Галерея</label>
-                <input type="checkbox" id="cart" ><label for="cart">Корзина</label>           
+                <input type="checkbox" id="slider" checked><label for="slider">Слайдер</label><br>
+                <input type="checkbox" id="block" ><label for="block">Блок преимуществ</label><br>
+                <input type="checkbox" id="news" checked><label for="news">Новости</label><br>
+                <input type="checkbox" id="gallery" ><label for="gallery">Галерея</label><br>
+                <input type="checkbox" id="cart" ><label for="cart">Корзина</label>          <br> 
                 <button type="submit">Показать</button>
             </form>
         </div>
-        <div class="content">
-            <div class="content_top_sort">
+        <div class="catalog_content">
+            <div class="content_top_sort clearfix">
                 <div class="content_top_text">
                     <p>Сортировать</p>
                 </div>
@@ -58,7 +60,8 @@
                     <a href="#" class="top_links_up"></a>
                 </div>
             </div>
-            <article class="content_item">
+            
+            <article class="catalog_content_item">
 
               <img src="img/img-sedona.jpg" width="360" height="616" alt="sedona">
 
@@ -68,7 +71,7 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
-             <article class="content_item">
+              <article class="catalog_content_item">
 
               <img src="img/img-pink.jpg" width="360" height="616" alt="Pink">
 
@@ -78,7 +81,7 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
-             <article class="content_item">
+           <article class="catalog_content_item">
 
               <img src="img/img-barbershop.jpg" width="360" height="616" alt="Borodinsky">
 
@@ -88,7 +91,7 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
-            <article class="content_item">
+            <article class="catalog_content_item">
 
               <img src="img/img-mishka.jpg" width="360" height="616" alt="Mishka">
 
@@ -98,7 +101,7 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
-              <article class="content_item">
+             <article class="catalog_content_item">
 
               <img src="img/img-aplus.jpg" width="360" height="616" alt="study">
 
@@ -108,7 +111,7 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
-               <article class="content_item">
+            <article class="catalog_content_item">
 
               <img src="img/img-kvast.jpg" width="360" height="616" alt="Kvast">
 
@@ -118,7 +121,9 @@
                  <a href="#" class="btn">9900 руб.</a>
               </div>
             </article>
+            </div>
         </div>
+  
         <div class="content_map">
 
            <img src="img/map.png" width="1440" height="416" alt="">
@@ -132,6 +137,7 @@
        </div>
   </main>
 <footer class="main_footer">
+         <div class="container clearfix">
           <section class="footer_social">
                    <a href="#" class="social_btn social_btn_vk">Вконтакте</a>
                    <a href="#" class="social_btn social_btn_fb">Фейсбук</a>
@@ -141,6 +147,7 @@
                <strong>Давайте дружить, это выгодно</strong>
                <p>10% для друзей из социальных сетей</p>
            </section>
+           </div>
        </footer>
   </body>
 </html>

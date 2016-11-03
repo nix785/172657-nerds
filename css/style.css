@@ -22,6 +22,7 @@ h2{
     width: 1440px;
     margin: 0 auto;
     margin-bottom: 80px;
+    min-height: 355px;
 }
 .container_top {
     width: 1160px;
@@ -61,7 +62,7 @@ h2{
     margin: 0 auto;
 }
 .content_item{
-    width: 1160px;
+    width: 1100px;
     margin: 0 auto;
     font-size: 0;
     line-height:0; 
@@ -117,11 +118,17 @@ h2{
     margin-right: 90px;
 }
 .content_map{
+    position: relative;
     margin-bottom: 70px;
 }
 .contact{
-    float: left;
-    width: 320px;
+    position: absolute;
+    top:54px;
+    left: 140px;
+    width: 220px;
+    background-color: #ffffff;
+    padding: 50px;
+
 }
 .container{
      width: 1160px;
@@ -135,4 +142,56 @@ h2{
 .main_footer_right{
     float: left;
     width: 560px;
+}
+/*----------catalog----------*/
+
+.header_title{
+    width: 760px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+.catalog_sidebar{
+    float: left;
+    width: 260px;
+}
+.catalog_content{
+    float: right;
+    width: 760px;
+}
+.content_top_text{
+    float: left;
+    width: 160px;
+    text-align: left;
+}
+.content_top_links{
+    float: right;
+    width: 360px;
+    }
+.content_top_links a {
+    display: inline-block;
+    width: 103px;
+    margin-left: 5spx;
+}
+.catalog_content_item{
+    display: inline-block;
+    vertical-align: top;
+    width: 360px;
+  margin-right: 36px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.content_item_sale{
+    position: absolute;
+    bottom:0px;
+    width: 360px;
+    min-height: 232px;
+     text-align: center;s
+}
+.catalog_content_item:nth-child(odd){
+    margin-right: 0;
+}
+.catalog{
+    width: 1440px;
+    margin: 0 auto;
 }
