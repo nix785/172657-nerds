@@ -3,7 +3,8 @@ body{
     line-height: 24px;
     color: #41484c;
     font-weight: bold;
-    font-family: "Roboto" "Arial" serif;    
+    font-family: "Roboto", "Arial", sans-serif; 
+    background-color: #ffffff;
 }
 h1{
     font-size: 55px;
@@ -23,11 +24,12 @@ h2{
     margin: 0 auto;
     margin-bottom: 80px;
     min-height: 355px;
+    background-color: #eeeeee;
 }
 .container_top {
     width: 1160px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 48px;
     margin-bottom:10px;
 }
 .logo{
@@ -39,14 +41,58 @@ h2{
     float: left;
     width: 600px;
 }
+.nav_navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav_navigation li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.nav_navigation a{
+    display: block;
+    padding: 30px 25px;
+    color: #000000;
+    text-decoration: none;
+}
 .header_cart{
     float: right;
-    width: 120px;
+    width: 110px;
+    
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
-
+.header_cart a{
+    position: relative;
+    display: block;
+    color: #000000;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-decoration: none;
+        
+}
+.header_cart a::before{
+    content: "";
+    position: absolute;
+    top:37px;
+    left:-10px;
+    width: 15px;
+    height: 15px;
+    background: #eeeeee url("../img/sprite.png") no-repeat;
+    background-position: 0 0;
+}
 .slide{
+    display: none;
     width: 1160px;
     margin: 0 auto;
+}
+.slide:first-child{
+    display: block;
 }
 .slide_img{
     float: right;
