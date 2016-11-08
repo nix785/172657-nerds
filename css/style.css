@@ -24,7 +24,7 @@ p{
 .main_header{
     width: 1440px;
     margin: 0 auto;
-    margin-bottom: 73px;
+    margin-bottom: 80px;
     min-height: 355px;
     background-color: #eeeeee;
 }
@@ -90,37 +90,91 @@ p{
     background-position: 0 0;
 }
 .slider{
-    width: 1440px;
+    position: relative;
+    width: 1160px;
+    height: 415px;
+    margin: 0 auto;
+}
+.slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+.slider-controls{
+    position:absolute;
+    bottom:98px;
+    left:50%;
+    width:200px;
+    height:10px;
+    margin-left:-100px;
+    text-align:center;
+    z-index:1000;
+}
+.slider-controls label{
+    display:inline-block;
+    width:4px;
+    height:4px;
+    margin:0 12px;
+    background:white;
+    border:2px solid white;
+    vertical-align:top;
+    box-shadow: 0px 0px 0px 5px white;
+    border-radius:50%;
+    cursor:pointer;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    border:2px solid #c1c1c1;
+}
+.slide{
+   position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-color:#eeeeee;  
+       
 }
 
-.slide{
-      width: 1160px;
-    margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 250px;
+.slide:nth-child(1){
+    background-image:url("../img/slider-1.png");
+    background-repeat:no-repeat;
+    background-position:100% 10px;
 }
-.slider ul{
-    list-style: none;
+.slide:nth-child(2){
+    background-image:url("../img/slider-2.png");
+    background-repeat:no-repeat;
+    background-position:100% 10px;
 }
-.slider  li{
-    display: none;
+.slide:nth-child(3){
+    background-image:url("../img/slider-3.png");
+    background-repeat:no-repeat;
+    background-position:100% 0;
 }
-.slider  li:first-child{
+#btn-1:checked ~ .slider .slide:nth-child(1) { 
     display: block;
 }
-.slide_img{
-    float: right;
-    width: 760px;
-    margin-top: -32px;
+#btn-2:checked ~ .slider .slide:nth-child(2) { 
+    display: block;
+}
+#btn-3:checked ~ .slider .slide:nth-child(3) { 
+    display: block;
+}
+.slide:nth-child(1){
+    display: block;
 }
 .slide_text{
     float: left;
-    width: 380px;
-    margin-right: 20px;
+    width: 518px;
+    color: #283136;
+    margin-top: 62px;
 }
-.slide_text h1{
-    margin-top: 45px;
-    margin-bottom: 25px;
+.slide_title{
+   font-size: 55px;
+   line-height: 55px;
+     font-weight:bold;
+     margin-bottom: 25px;
 }
 
 .btn{
@@ -296,6 +350,7 @@ margin-bottom: 50px;}
       font-size: 0px;
     background-color:  #e1e1e1 ;
     margin-right: 10px;
+    margin-bottom: 70px;
 }
 .footer_social a:last-child{
     margin-right: 0;
@@ -345,6 +400,83 @@ margin-bottom: 50px;}
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+}
+/*----------всплывающее окно-------*/
+
+.modal-content{
+    position: fixed;
+    width: 760px;
+    height: 440px;
+    padding: 75px 100px;
+    left: 50%;
+    bottom: 180px;
+    margin-left: -480px;
+    background-color: #ffffff;
+    box-shadow: 0 30px 35px rgba(94, 95, 95, 0.7);
+}
+.modal-content-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 20px;
+  height: 4px;
+  background-color: #fecccd;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.write_us  input[type="text"]
+ {
+  width: 326px;
+  margin: 0;
+   padding: 15px;
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 18px;
+    color: #767676;
+     border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+.write_us  input[type="text"]:last-child{
+    margin-right: 0;
+}
+.write_us label{
+    display: inline-block;
+    
+    width: 200px;
+}
+.write_us label:first-child{
+   margin-right: 190px; 
+}
+.write_us textarea{
+    width: 100%;
+    height: 118px;
+}
+.write_us h2{
+    font-size: 45px;
+    line-height: 45px;
 }
 /*----------catalog----------*/
 
