@@ -11,7 +11,7 @@
 <header class="main_header">
     <div class="container_top clearfix">
         <div class="logo">
-            <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+           
         </div>
         <nav class="nav_navigation">
             <ul>
@@ -106,7 +106,7 @@
 
            </div>
            <h3>С 2004 года любим точность во всем</h3>
-           <div class="procent">
+           <div class="procent clearfix">
                <div class="procent_item"><b>146<span>%</span></b><p>Уровень самоотдачи</p></div>
                <div class="procent_item"><b>100<span>%</span></b><p>Соблюдение сроков</p></div>
                <div class="procent_item"><b>50<span>%</span></b><p>Минимальная предоплата</p></div>
@@ -115,11 +115,11 @@
        </div>    
        <div class="content_logo clearfix">
 
-           <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
-          <img src="img/logo-2.png" width="209" height="87" alt="Барбершоп «Бородинский»">
-          <img src="img/logo-3.png" width="185" height="52" alt="Pink»">
-          <img src="img/logo-4.png" width="173" height="84" alt="Mishka»">
-       </div>
+           <div class="logo_item"></div>
+           <div class="logo_item"></div>
+           <div class="logo_item"></div>
+           <div class="logo_item"></div>
+        </div>
        <div class="content_map">
           <div class="contact">
                <h3>NЁRDS DESIGN STUDIO</h3>
@@ -127,7 +127,7 @@
                <p>тел. +7(812)275-75-75</p>
                <a href="#" class="btn">Напишите нам</a>
            </div>
-           <img src="img/map.png" width="1440" height="415" alt="">
+           <img src="img/map.png" width="1438" height="416" alt="">
 
            
        </div>
@@ -140,7 +140,7 @@
                    <a href="#" class="inst">Инстаграм</a>
               </section>
            <section class="main_footer_right">
-               <strong>Давайте дружить, это выгодно!</strong>
+               <h3>Давайте дружить, это выгодно!</h3>
                <p>Скидка 10% для друзей из социальных сетей</p>
            </section>
            </div>
@@ -148,15 +148,16 @@
        
 
 
-       <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+       <div class="modal_content">
+      <button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
       <h2>Напишите нам</h2>
       <form  action="#"  class="write_us" method="post">
-        <label for="name">Ваше имя:</label>   <label for="email">Ваш e-mail:</label>
-        <input type="text" name="name"  id="name"placeholder="Представьтесь, пожалуйста">
-      <input type="text" name="email"  id="email"placeholder="Для отправки ответа">
-
-     <br> <label for="message">Текст письма:</label>
+       <div class="input_container clearfix"> <label for="name">Ваше имя:</label>   <label for="email">Ваш e-mail:</label>
+        <input type="text" name="name"  id="name" placeholder="Представьтесь, пожалуйста">
+        
+      <input type="text" name="email" class="last" id="email" placeholder="Для отправки ответа">
+          </div>
+      <label for="message">Текст письма:</label>
       <textarea placeholder=" В свободной форме" name="message" id="message"></textarea>
          <button class="btn" type="submit" >Отправить</button>
       </form>
