@@ -1,0 +1,13 @@
+.sprite { background: url('sprite.png') no-repeat top left; height: 15px;  } 
+.sprite.cart-icon { background-position: 0 0; width: 15px; } 
+.sprite.social-vk-icon { background-position: -115px 0; width: 26px; } 
+.sprite.social-fb-icon { background-position: -241px 0; width: 12px; height: 22px; } 
+.sprite.social-insta-icon { background-position: -353px 0; width: 21px; height: 21px; } 
+.sprite.checkbox-off { background-position: -474px 0; width: 23px; height: 23px; } 
+.sprite.checkbox-on { background-position: -597px 0; width: 27px; height: 23px; } 
+.sprite.browser { background-position: -724px 0; width: 360px; height: 40px; } 
+.sprite.logo-1h { background-position: -1184px 0; width: 199px; height: 68px; } 
+.sprite.logo-2h { background-position: -1483px 0; width: 209px; height: 90px; } 
+.sprite.logo-3h { background-position: -1792px 0; width: 185px; height: 52px; } 
+.sprite.logo-4h { background-position: -2077px 0; width: 173px; height: 84px; } 
+.sprite.nerds-logo { background-position: -2350px 0; width: 160px; height: 65px; } 
