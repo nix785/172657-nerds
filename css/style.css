@@ -194,37 +194,38 @@ button:active,
     overflow: hidden;
     background-color: #eeeeee;
 }
-
+.slide{
+    display: none;
+}
 .slide_1 {
     background-image: url("../img/slider-1.png");
     background-repeat: no-repeat;
+   background-position: 100% 10px;
 }
 
 .slide_2 {
     background-image: url("../img/slider-2.png");
     background-repeat: no-repeat;
     background-position: 100% 10px;
+    
 }
 
 .slide_3 {
     background-image: url("../img/slider-3.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
+
 }
 
-.slide_1 {
+
+
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
     display: block;
 }
-
-#btn-1:checked ~ .slider .slide_1 {
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
     display: block;
 }
-
-#btn-2:checked ~ .slider .slide_2 {
-    display: block;
-}
-
-#btn-3:checked ~ .slider .slide_3 {
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
     display: block;
 }
 
@@ -466,51 +467,18 @@ button:active,
     background-position: 30px 20px;
     opacity: 0.4;
 }
-
-.logo_item:nth-child(1)::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 0px;
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
-}
-
 .logo_item:nth-child(2) {
     background-image: url("../img/logo-2.png");
     background-repeat: no-repeat;
     background-position: 35px 5px;
     opacity: 0.4;
 }
-
-.logo_item:nth-child(2)::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 0px;
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
-}
-
 .logo_item:nth-child(3) {
     background-image: url("../img/logo-3.png");
     background-repeat: no-repeat;
     background-position: 57px 22px;
     opacity: 0.4;
 }
-
-.logo_item:nth-child(3)::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 0px;
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
-}
-
 .logo_item:nth-child(4) {
     background-image: url("../img/logo-4.png");
     background-repeat: no-repeat;
@@ -518,7 +486,18 @@ button:active,
     background-position: 72px 10px;
     opacity: 0.4;
 }
-
+.logo_item::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+}
+.logo_item:nth-child(4)::after{
+    display: none;
+}
 .logo_item:hover {
     opacity: 1;
 }
@@ -857,7 +836,7 @@ button:active,
 
 .parametrs label {
     position: relative;
-    display: inline-block;
+   display: inline-block;
     padding-left: 35px;
     cursor: pointer;
     font-size: 16px;
@@ -903,7 +882,7 @@ button:active,
     background-color: #4d4d4d;
 }
 
-.parametrs input[type="checkbox"]:checked + .checkbox_indicators {
+.parametrs input[type="checkbox"]:checked + .checkbox_indicator {
     content: "";
     position: absolute;
     top: -3px;
