@@ -72,7 +72,7 @@ button:active,
     list-style: none;
 }
 
-.nav_navigation li {
+.nav_navigation li  {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -82,23 +82,31 @@ button:active,
     text-transform: uppercase;
 }
 
-.nav_navigation a {
+.nav_navigation a,
+.nav_navigation span {
     display: block;
     padding: 26px 2px;
     color: #000000;
     text-decoration: none;
 }
-
-.active_cart a::after {
+.nav_navigation .active_page{
+    position: relative;
+    background-color: none;
+}
+.nav_navigation .active_page ::after {
     content: "";
     position: absolute;
-    bottom: 25px;
-    left: 0px;
-    width: 100%;
+    right: 0px;
+  bottom: 20px;
+  left: 0px;
     height: 2px;
     background-color: #ff0000;
 }
-
+.nav_navigation .active span {
+  display: block;
+  padding: 26px 2px;
+  color: #ffffff;
+}
 .nav_navigation a:hover {
     color: #ff4444;
 }
@@ -643,6 +651,14 @@ button:active,
 
 
 /*----------всплывающее окно-------*/
+@keyframes  widening{
+    0%{
+        transform: translateY(-1000px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
 
 .modal_content {
     position: fixed;
@@ -655,6 +671,13 @@ button:active,
     background-color: #ffffff;
     box-shadow: 0 25px 55px rgb(94, 95, 95);
     display: none;
+    
+
+}
+.modal_content_show{
+    display: block;
+    animation-name: widening;
+    animation-duration: 0.6s;
 }
 
 .modal_content .btn {
@@ -741,7 +764,10 @@ button:active,
     border: 2px solid #000000;
     color: #000000;
 }
-
+.write_us input[type="text"]:required{
+     border: 2px solid #e74246;
+    color: #ed7477;
+}
 .write_us input[type="text"]:hover {
     border: 2px solid #abb2b6;
     color: #bcbcbc;
@@ -818,15 +844,20 @@ button:active,
     font-size: 16px;
     line-height: 18px;
     color: #2d2d2d;
-    border: 4px solid #dfdfdf;
-    background-color: #dfdfdf;
-    opacity: 0.7;
-    overflow: hidden;
+    border: 4px solid #eeeeee;
+    background-color: #eeeeee;
+       overflow: hidden;
+}
+.catalog_sidebar .btn:hover {
+  background-color: #dfdfdf;
+    border-color: #dfdfdf;
 }
 
-.catalog_sidebar .btn:hover {
-    opacity: 1;
-    border-top-color: #d3d3d3;
+.catalog_sidebar .btn:active {
+          background-color: #d5d5d5; 
+           border-color: #d5d5d5;
+            border-top-color: #bfbfbf;
+            color: #a6a6a6;
 }
 
 .parametrs p {
@@ -1183,7 +1214,7 @@ button:active,
     margin-right: 8px;
 }
 
-.active_page {
+.paginator_page .active_page {
     padding-top: 13px;
     background: none;
     width: 44px;
