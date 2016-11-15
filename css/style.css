@@ -746,7 +746,7 @@ button:active,
     margin-left: -2px;
 }
 
-.write_us input[type="text"] {
+ input[type="text"] {
     display: block;
     float: left;
     vertical-align: top;
@@ -760,20 +760,17 @@ button:active,
     border-radius: 2px;
 }
 
-.write_us input[type="text"]:focus {
+ input[type="text"]:focus {
     border: 2px solid #000000;
     color: #000000;
 }
-.write_us input[type="text"]:required{
-     border: 2px solid #e74246;
-    color: #ed7477;
-}
-.write_us input[type="text"]:hover {
+
+input[type="text"]:hover {
     border: 2px solid #abb2b6;
     color: #bcbcbc;
 }
 
-.write_us input[type="text"]:nth-of-type(2) {
+ input[type="text"]:nth-of-type(2) {
     margin-right: 0;
     float: right;
 }
@@ -790,7 +787,7 @@ button:active,
     margin-right: 195px;
 }
 
-.write_us textarea {
+ textarea {
     width: 736px;
     height: 94px;
     padding: 10px 9px;
@@ -815,9 +812,9 @@ button:active,
     margin-bottom: 32px;
 }
 
-.input_error input[type="text"] {
-    color: #e80000;
-    border: 2px solid #e80000;
+.error {
+       border: 2px solid #e74246;
+    color: #ed7477;
 }
 
 
