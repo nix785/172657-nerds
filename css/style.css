@@ -12,10 +12,6 @@ h1 {
     line-height: 55px;
 }
 
-s p {
-    font-weight: 400;
-}
-
 button:active{
     outline: none;
 }
@@ -111,6 +107,22 @@ button:active{
     padding: 26px 2px;
     color: #ffffff;
 }
+
+ .active_cart {
+    position: relative;
+    background-color: none;
+}
+
+ .active_cart::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    left: 0px;
+    height: 2px;
+    background-color: #ff0000;
+}
+
 
 .nav_navigation a:hover {
     color: #ff4444;
@@ -530,9 +542,13 @@ button:active{
     margin: 0 auto;
     width: 100%;
     height: 416px;
-    box-sizing: border-box;
+   
 }
 
+.map{
+    width: 100%;
+
+}
 .content_map .container {
     position: relative;
 }
@@ -609,7 +625,7 @@ button:active{
     margin-left: -13px;
     width: 26px;
     height: 21px;
-    background: url("../img/sprite.png") -226px 4px no-repeat;
+    background: url("../img/sprite.png") -173px 4px no-repeat;
 }
 
 .footer_social .fb::before {
@@ -621,7 +637,7 @@ button:active{
     margin-left: -7px;
     width: 12px;
     height: 22px;
-    background: url("../img/sprite.png") -260px -2px no-repeat;
+    background: url("../img/sprite.png") -109px -2px no-repeat;
 }
 
 .footer_social .inst::before {
@@ -633,7 +649,7 @@ button:active{
     margin-left: -11.5px;
     width: 26px;
     height: 21px;
-    background: url("../img/sprite.png") -195px 2px no-repeat;
+    background: url("../img/sprite.png") -135px 2px no-repeat;
 }
 
 .footer_social a:active::before {
@@ -905,8 +921,8 @@ textarea {
     left: 0;
     width: 27px;
     height: 23px;
-    background-image: url("../img/sprites.png");
-    background-position: -474px 0px;
+    background-image: url("../img/sprite.png");
+    background-position: -30px 0px;
 }
 
 .parametrs input[type="radio"]:checked + .radio_indicator::before {
@@ -927,8 +943,8 @@ textarea {
     left: 0;
     width: 27px;
     height: 23px;
-    background-image: url("../img/sprites.png");
-    background-position: -597px 0px;
+    background-image: url("../img/sprite.png");
+    background-position: -68px 0px;
 }
 
 .header_title {
@@ -945,7 +961,7 @@ textarea {
 
 .range_filter {
     width: 260px;
-    margin-bottom: 56px;
+    margin-bottom: 45px;
 }
 
 .range_controls {
@@ -998,12 +1014,19 @@ textarea {
 .price_controls label {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     display: inline-block;
     width: 50%;
+    text-align: left; 
 }
-
+.price_controls span{
+float: left;
+padding-top: 7px;
+}
+.max_price span{
+    margin-left: 10px;
+}
 .max_price {
     text-align: right;
 }
@@ -1012,7 +1035,7 @@ textarea {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 17px;
     padding: 8px 10px;
     text-align: center;
     color: #283136;
@@ -1020,7 +1043,9 @@ textarea {
     border-radius: 5px;
     background: #f1f1f1;
 }
-
+.price_controls input:hover{
+      border: none;
+}
 .content_top_sort a {
     display: inline-block;
     vertical-align: top;
@@ -1167,7 +1192,8 @@ textarea {
 .item_container {
     width: 260px;
     margin: 0 auto;
-    margin-top: 28px;
+    margin-top: 12px;
+    overflow: hidden;
 }
 
 .content_item_sale h2 {
@@ -1186,6 +1212,7 @@ textarea {
     width: 200px;
     margin: 0 auto;
     margin-top: 28px;
+    color: #ffffff;
 }
 
 .content_item_sale .btn:hover {
