@@ -12,7 +12,7 @@ h1 {
     line-height: 55px;
 }
 
-button:active{
+button:active {
     outline: none;
 }
 
@@ -108,12 +108,12 @@ button:active{
     color: #ffffff;
 }
 
- .active_cart {
+.active_cart {
     position: relative;
     background-color: none;
 }
 
- .active_cart::after {
+.active_cart::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -122,7 +122,6 @@ button:active{
     height: 2px;
     background-color: #ff0000;
 }
-
 
 .nav_navigation a:hover {
     color: #ff4444;
@@ -542,13 +541,12 @@ button:active{
     margin: 0 auto;
     width: 100%;
     height: 416px;
-   
 }
 
-.map{
+.map {
     width: 100%;
-
 }
+
 .content_map .container {
     position: relative;
 }
@@ -884,19 +882,20 @@ textarea {
 }
 
 .parametrs p {
-    margin-top: 28px;
+    margin-top: 26px;
     margin-bottom: 15px;
 }
 
 .parametrs label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding-left: 35px;
     cursor: pointer;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     color: #000000;
     opacity: 0.5;
 }
@@ -961,7 +960,7 @@ textarea {
 
 .range_filter {
     width: 260px;
-    margin-bottom: 45px;
+    margin-bottom: 58px;
 }
 
 .range_controls {
@@ -1017,16 +1016,24 @@ textarea {
     font-weight: 300;
     text-transform: uppercase;
     display: inline-block;
+    vertical-align: top;
     width: 50%;
-    text-align: left; 
+    text-align: left;
 }
-.price_controls span{
-float: left;
-padding-top: 7px;
+
+.price_controls span {
+    float: left;
+    padding-top: 7px;
 }
-.max_price span{
+
+.max_price span {
     margin-left: 10px;
 }
+
+.min-price input {
+    margin-left: 20px;
+}
+
 .max_price {
     text-align: right;
 }
@@ -1043,9 +1050,11 @@ padding-top: 7px;
     border-radius: 5px;
     background: #f1f1f1;
 }
-.price_controls input:hover{
-      border: none;
+
+.price_controls input:hover {
+    border: none;
 }
+
 .content_top_sort a {
     display: inline-block;
     vertical-align: top;
@@ -1136,12 +1145,14 @@ padding-top: 7px;
 
 .content_top_links a {
     display: inline-block;
+    vertical-align: top;
     margin-right: 22px;
     margin-top: 22px;
 }
 
 .catalog_content_item {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     vertical-align: top;
     width: 360px;
@@ -1228,7 +1239,7 @@ padding-top: 7px;
 }
 
 .paginator {
-    margin-top: -16px;
+    margin-top: -14px;
     margin-bottom: 60px;
 }
 
@@ -1236,23 +1247,23 @@ padding-top: 7px;
     display: inline-block;
     vertical-align: top;
     width: 44px;
-    height: 31px;
+    height: 30px;
     border-radius: 3px;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 14px;
     color: #000000;
     border: 3px solid #eeeeee;
     background-color: #eeeeee;
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
 .active_paginator {
-    padding-top: 13px;
+    padding-top: 14px;
     background: none;
     width: 44px;
-    height: 31px;
+    height: 30px;
     border: 3px solid #dbdbdb;
 }
 
@@ -1268,5 +1279,5 @@ padding-top: 7px;
 }
 
 .paginator_page:last-child {
-    width: 260px;
+    width: 255px;
 }
