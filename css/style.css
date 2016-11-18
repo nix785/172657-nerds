@@ -265,6 +265,7 @@ button:active {
     line-height: 55px;
     font-weight: bold;
     margin-bottom: 25px;
+    width: 525px;
 }
 
 .btn {
@@ -1042,7 +1043,7 @@ textarea {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     width: 60px;
-    margin-left: 17px;
+    margin-left: 15px;
     padding: 8px 10px;
     text-align: center;
     color: #283136;
@@ -1053,8 +1054,12 @@ textarea {
 
 .price_controls input:hover {
     border: none;
+    overflow: hidden;
 }
-
+.price_controls input:focus {
+    border: none;
+    overflow:hidden;
+}
 .content_top_sort a {
     display: inline-block;
     vertical-align: top;
@@ -1146,7 +1151,7 @@ textarea {
 .content_top_links a {
     display: inline-block;
     vertical-align: top;
-    margin-right: 22px;
+    margin-right: 20px;
     margin-top: 22px;
 }
 
@@ -1196,9 +1201,6 @@ textarea {
     color: inherit;
 }
 
-.content_item_sale:hover {
-    cursor: pointer;
-}
 
 .item_container {
     width: 260px;
