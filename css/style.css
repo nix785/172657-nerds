@@ -35,7 +35,7 @@ button:active {
 }
 
 .catalog_header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .main_header .container {
@@ -95,9 +95,9 @@ button:active {
 .nav_navigation .active_page::after {
     content: "";
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: 20px;
-    left: 0px;
+    left: 0;
     height: 2px;
     background-color: #ff0000;
 }
@@ -116,9 +116,9 @@ button:active {
 .active_cart::after {
     content: "";
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: -5px;
-    left: 0px;
+    left: 0;
     height: 2px;
     background-color: #ff0000;
 }
@@ -192,6 +192,7 @@ button:active {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: top;
     width: 4px;
     height: 4px;
     margin: 0 12px;
@@ -335,8 +336,7 @@ button:active {
 }
 
 .content {
-    /* width: 1440px;*/
-    margin: 0 auto;
+        margin: 0 auto;
 }
 
 .content_item {
@@ -360,6 +360,7 @@ button:active {
 
 .item {
     display: inline-block;
+    vertical-align: top;
     width: 300px;
     margin-right: 100px;
     font-size: 16px;
@@ -653,7 +654,7 @@ button:active {
 
 .footer_social a:active::before {
     opacity: 0.3;
-    ;
+    
 }
 
 .main_footer_right {
@@ -756,11 +757,13 @@ button:active {
 }
 
 .modal_content_close::before {
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
 }
 
 .modal_content_close::after {
-    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
 }
 
 .modal_content h2 {
@@ -802,6 +805,7 @@ input[type="text"]:nth-of-type(2) {
 
 .write_us label {
     display: inline-block;
+    vertical-align: top;
     width: 200px;
     margin-bottom: 10px;
     font-size: 16px;
@@ -904,7 +908,12 @@ textarea {
 .parametrs label:hover {
     opacity: 1;
 }
-
+.parametrs input[type="radio"]:disabled~span{
+    opacity: 0.3;
+}
+.parametrs input[type="checkbox"]:disabled~span{
+    opacity: 0.3;
+}
 .parametrs input[type="radio"] + .radio_indicator {
     position: absolute;
     top: -3px;
@@ -989,7 +998,7 @@ textarea {
 .range_controls .toggle {
     position: absolute;
     top: 30px;
-    left: 0px;
+    left: 0;
     width: 4px;
     height: 4px;
     cursor: pointer;
@@ -1074,7 +1083,7 @@ textarea {
 }
 
 .content_top_sort a:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .content_top_sort a:hover {
@@ -1164,8 +1173,15 @@ textarea {
     margin-right: 36px;
     margin-bottom: 69px;
     position: relative;
+
 }
 
+.catalog_content_item img:hover+.content_item_sale{
+    display: block;
+}
+.content_item_sale:hover{
+    display: block;
+}
 .catalog_content_item::before {
     content: "";
     position: absolute;
@@ -1194,6 +1210,7 @@ textarea {
     text-align: center;
     box-sizing: border-box;
     background-color: #eeeeee;
+display: none;
 }
 
 .content_item_sale a {
@@ -1204,6 +1221,7 @@ textarea {
 
 .item_container {
     width: 260px;
+    height: 175px;
     margin: 0 auto;
     margin-top: 12px;
     overflow: hidden;
@@ -1270,14 +1288,15 @@ textarea {
 }
 
 .paginator_page:hover {
-    background: none;
+    background-color:#bfbfbf;
+    color: #000000;
     border: 3px solid transparent;
 }
 
 .paginator_page:active {
-    color: #c8c8c8;
-    border: 3px solid transparent;
-    border-top: 3px solid #dbdbdb;
+    background-color:#d5d5d5; 
+    color: #a6a6a6;
+     border-top: 3px solid #bfbfbf;
 }
 
 .paginator_page:last-child {
