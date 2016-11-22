@@ -1173,7 +1173,7 @@ textarea {
     margin-right: 36px;
     margin-bottom: 69px;
     position: relative;
-
+   
 }
 
 .catalog_content_item img:hover+.content_item_sale{
@@ -1203,6 +1203,7 @@ textarea {
 }
 
 .content_item_sale {
+    display: block;
     position: absolute;
     bottom: 8px;
     width: 360px;
@@ -1210,7 +1211,7 @@ textarea {
     text-align: center;
     box-sizing: border-box;
     background-color: #eeeeee;
-display: none;
+     display: none;
 }
 
 .content_item_sale a {
@@ -1237,6 +1238,9 @@ display: none;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+    height: 36px;
+    width: 260px;
+    overflow: hidden;
 }
 
 .content_item_sale .btn {
